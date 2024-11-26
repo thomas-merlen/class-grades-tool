@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>PRONOTE - Mohamed & Thomas</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Pronote</h1>
+
+        <table>
+            <thead id="thead">
+                <tr id="entete">
+                    <td>NOM</td>
+                    <td>PRENOM</td>
+                    <td>MOYENNE</td>
+                    <td id="colonne_supprimer"></td>
+                 </tr>
+            </thead>
+
+            <tbody id="tbody">
+            </tbody>
+            <tbody>
+                <tr id="ligne_moyenne">
+                    <td class="vide"></td>
+                    <td>CLASSE : </td>
+				    <td id="moyenne_classe"></td>
+                </tr>
+			    <tr id="ligne_supprimer">
+			        <td class="vide"></td>
+			        <td class="vide"></td>
+			        <td class="vide"></td>
+			    </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <h3>Ajouter un élève :</h3>
+
+            <form>
+                <label>Nom : </label><input id="Nom" type="text" size="20" placeholder="Cobain">
+                <label>Prénom : </label><input id="Prenom" type="text" size="20" placeholder="Kurt">
+                <input type="button" value="+" onclick="ajouter_eleve()">
+            </form>
+
+            <h3>Ajouter une note :</h3>
+
+            <form>
+                <label>Nom : </label><input id="Nom_note" type="text" size="20" placeholder="Mathématiques">
+                <label>Coefficient : </label><input id="Coefficient" type="number" size="20" placeholder="16">
+                <input type="button" value="+" onclick="ajouter_note()">
+            </form>
+            <br>
+
+            <button onclick="actualiser()">Actualiser</button>    
+        </div>
+        <p id="Identifiant">Crée par BELOUED Mohamed et MERLEN Thomas</p>
+    </body>
+</html>
