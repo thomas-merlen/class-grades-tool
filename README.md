@@ -26,6 +26,6 @@ L'application se compose de :
 
 1. Clonez ce repository :
    ```bash
-   git clone https://github.com/votre-utilisateur/nom-du-repository.git
+   git clone https://github.com/thomas-merlen/class-grades-tool.git
 
 2. Ouvrer le fichier index.html
